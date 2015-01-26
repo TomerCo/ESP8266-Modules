@@ -5,3 +5,5 @@ Each module is compiled into a seperate shared library, to use place the library
 and the relevant include file under $SDK/include.
 
 Also add -l<lib> to your LINKFLAGS_eagle.app.v6 variable which is defined in the Makefile, for example: -llcd.
+
+Current modules: Basic LCD module 
