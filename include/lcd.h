@@ -39,6 +39,21 @@ typedef struct {
 extern  tESPLCDData * ICACHE_FLASH_ATTR lcd_init(int en_pin, int rs_pin, int db4, int db5, int db6, int db7);
 
 extern void ICACHE_FLASH_ATTR lcd_print(tESPLCDData *lcd, char *str);
+extern void ICACHE_FLASH_ATTR lcd_clear(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_home(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_display_on(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_display_off(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_cursor_on(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_cursor_off(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_blink_on(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_blink_off(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_scroll_left(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_scroll_right(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_l2r(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_r2l(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_autoscroll_on(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_autoscroll_off(tESPLCDData *lcd);
+extern void ICACHE_FLASH_ATTR lcd_create_char(tESPLCDData *lcd,unsigned char loc, unsigned char *map);
 
 
 
